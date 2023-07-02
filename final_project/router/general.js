@@ -20,7 +20,6 @@ public_users.post("/register", (req,res) => {
 
 // Get the book list with async/await
 public_users.get('/', async function (req, res) {
-    // Simulate 2' delay with Promise
     const getBooks = () => {
         return new Promise((resolve) => {
             setTimeout(() => {
